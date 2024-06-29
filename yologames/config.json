@@ -1,0 +1,18 @@
+{
+  "token": "$YOLO",
+  "decimals": 18,
+  "seed": "0x8dd20f2c429ea979898c5484f9d80fde7ce527996f50b22035dc13a025862d5d",
+  "_seed": "YOLO contract creation: https://blastscan.io/tx/0x8dd20f2c429ea979898c5484f9d80fde7ce527996f50b22035dc13a025862d5d",
+  "prizes": [
+    {
+      "name": "Grand Prize",
+      "tokens": "8888888",
+      "total": 1
+    },
+    {
+      "name": "Prize",
+      "tokens": "8888",
+      "total": 29002
+    }
+  ]
+}

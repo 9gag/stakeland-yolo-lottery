@@ -1,0 +1,20 @@
+{
+  "token": "$BORPA",
+  "decimals": 6,
+  "seed": "4tDy9xya3ZTy9gNsYMcyvWoC33tUcfuTiWPuoiPW3YzarMJBR52QbJfNLAF2Lq1LseXvmq7xQmjNEmfgjejxJRgv",
+  "_seed": "BORPA TGE tx: https://solscan.io/tx/4tDy9xya3ZTy9gNsYMcyvWoC33tUcfuTiWPuoiPW3YzarMJBR52QbJfNLAF2Lq1LseXvmq7xQmjNEmfgjejxJRgv",
+  "prizes": [
+    {
+      "name": "Grand Prize",
+      "tokens": "1010101.1",
+      "display": "1000000",
+      "total": 1
+    },
+    {
+      "name": "Prize",
+      "tokens": "909.1",
+      "display": "900",
+      "total": 9999
+    }
+  ]
+}

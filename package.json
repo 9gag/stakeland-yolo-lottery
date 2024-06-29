@@ -2,16 +2,18 @@
   "name": "stakeland-yolo-lottery",
   "license": "MIT",
   "scripts": {
-    "lottery": "tsx src/lottery.ts > data/result.json",
-    "format": "tsx src/format.ts > README.md"
+    "lottery": "tsx src/lottery.ts",
+    "format": "tsx src/format.ts"
   },
   "dependencies": {
     "@ethersproject/units": "^5.7.0",
+    "@vue-reactivity/fs": "^0.1.1",
     "seedrandom": "^3.0.5",
     "tablemark": "^3.1.0",
     "tsx": "^4.11.2"
   },
   "devDependencies": {
+    "@types/node": "^20.14.8",
     "@types/seedrandom": "^3.0.8"
   }
 }

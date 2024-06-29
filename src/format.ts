@@ -1,23 +1,32 @@
-import { formatEther } from "@ethersproject/units";
+import { formatUnits } from "@ethersproject/units";
 import tablemark from "tablemark";
+import { getData, Result } from "./utils";
 
-import result from "../data/result.json";
+(async () => {
+  const {
+    config: { token, decimals, prizes },
+    readmeFile,
+    resultFile,
+  } = await getData();
+  const result: Result = JSON.parse(resultFile.value!);
+  const formatter = new Intl.NumberFormat("en-US", {
+    maximumFractionDigits: 2,
+  });
 
-import { prizes } from "./prizes";
+  readmeFile.value = `# Stakeland ${token} lottery\n`;
 
-const formatter = new Intl.NumberFormat("en-US");
-
-console.log(`# Stakeland $YOLO lottery\n`);
-
-for (let i = 0; i < prizes.length; i++) {
-  const { name, token, total } = prizes[i];
-  console.log(`## ${name} (${total})\n`);
-  const rows = [];
-  for (const [wallet, data] of Object.entries(result)) {
-    const count = data.prizes[i] ?? 0;
-    if (!count) continue;
-    const amount = formatEther((token * BigInt(count)).toString());
-    rows.push({ wallet, count, amount: formatter.format(Number(amount)) });
+  for (let i = 0; i < prizes.length; i++) {
+    const { name, tokens, display, total } = prizes[i];
+    readmeFile.value += `## ${name} (${total})\n`;
+    const rows = [];
+    for (const [wallet, data] of Object.entries(result)) {
+      const count = data.prizes[i] ?? 0;
+      if (!count) continue;
+      const amount = formatUnits(display ?? tokens * BigInt(count), decimals);
+      rows.push({ wallet, count, amount: formatter.format(Number(amount)) });
+    }
+    readmeFile.value += tablemark(rows, {
+      columns: ["Wallet", "Prize", token],
+    });
   }
-  console.log(tablemark(rows, { columns: ["Wallet", "Prize", "$YOLO"] }));
-}
+})();
