@@ -1,20 +1,18 @@
 {
   "token": "$BORPA",
   "decimals": 6,
-  "seed": "4tDy9xya3ZTy9gNsYMcyvWoC33tUcfuTiWPuoiPW3YzarMJBR52QbJfNLAF2Lq1LseXvmq7xQmjNEmfgjejxJRgv",
-  "_seed": "BORPA TGE tx: https://solscan.io/tx/4tDy9xya3ZTy9gNsYMcyvWoC33tUcfuTiWPuoiPW3YzarMJBR52QbJfNLAF2Lq1LseXvmq7xQmjNEmfgjejxJRgv",
+  "seed": "2eB3k8ahpHQcAvoitpvYGcfzXL4xLv8o92NmpWADEpgUsbHSk2gG4oGwvyzsEri7Q9ZJsEEJTXZ3Uukic5QHsF2f",
+  "_seed": "BORPA TGE tx: https://solscan.io/tx/2eB3k8ahpHQcAvoitpvYGcfzXL4xLv8o92NmpWADEpgUsbHSk2gG4oGwvyzsEri7Q9ZJsEEJTXZ3Uukic5QHsF2f",
   "prizes": [
     {
       "name": "Grand Prize",
-      "tokens": "1010101.1",
-      "display": "1000000",
+      "tokens": "3000000",
       "total": 1
     },
     {
       "name": "Prize",
-      "tokens": "909.1",
-      "display": "900",
-      "total": 9999
+      "tokens": "2000",
+      "total": 41000
     }
   ]
 }
