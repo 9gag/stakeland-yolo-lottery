@@ -1,0 +1,18 @@
+{
+  "token": "$BOOST",
+  "decimals": 18,
+  "seed": "0x8376637eb98cb197591beeed989a685060ed92d93d14f987742700f975109826",
+  "_seed": "BOOST TGE tx: https://etherscan.io/tx/0x8376637eb98cb197591beeed989a685060ed92d93d14f987742700f975109826",
+  "prizes": [
+    {
+      "name": "Grand Prize",
+      "tokens": "10000000",
+      "total": 1
+    },
+    {
+      "name": "Prize",
+      "tokens": "100000",
+      "total": 100
+    }
+  ]
+}
