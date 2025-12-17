@@ -36,7 +36,14 @@ import { getData, Result, shuffle } from "./utils";
     for (let j = 0; j < total; j++) {
       const winner = allTickets[index] ?? null;
       if (!winner) break;
-      if (!redrawable && result[winner].prizes[0]) {
+      let hasWonBigPrize = false;
+      for (let k = 0; k < prizes.length - 1; k++) {
+        if (result[winner].prizes[k]) {
+          hasWonBigPrize = true;
+          break;
+        }
+      }
+      if (!redrawable && hasWonBigPrize) {
         index++;
         total++;
         continue;
