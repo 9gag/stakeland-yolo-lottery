@@ -1,0 +1,23 @@
+{
+  "token": "$N3ON",
+  "decimals": 6,
+  "seed": "SxVH5drmGaeKxu6qQ2X9cnf45yBQ55QVj3xdmSDKJP9iSiquBbqCNXwjqkkuCGp2n1v1FLevo6F2g21UVmwu9nw",
+  "_seed": "N3ON TGE tx: https://solscan.io/tx/SxVH5drmGaeKxu6qQ2X9cnf45yBQ55QVj3xdmSDKJP9iSiquBbqCNXwjqkkuCGp2n1v1FLevo6F2g21UVmwu9nw",
+  "prizes": [
+    {
+      "name": "Grand Prize",
+      "tokens": "5000000",
+      "total": 1
+    },
+    {
+      "name": "Second Prize",
+      "tokens": "2500000",
+      "total": 2
+    },
+    {
+      "name": "Prize",
+      "tokens": "100000",
+      "total": 100
+    }
+  ]
+}
