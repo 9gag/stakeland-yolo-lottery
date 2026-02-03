@@ -5,7 +5,7 @@ import { getData, Result, shuffle } from "./utils";
 
 (async () => {
   const {
-    config: { decimals, seed, prizes, redrawable },
+    config: { decimals, seed, prizes, redrawable, individual },
     walletTickets,
     resultFile,
   } = await getData();
@@ -24,12 +24,14 @@ import { getData, Result, shuffle } from "./utils";
       prizes: {
         ...[...Array(prizes.length).keys()].map((_) => 0),
       },
+      prizesIndexes: [],
     };
   }
 
   allTickets = shuffle(allTickets, random);
 
   let index = 0;
+  let priceIndex = 0;
 
   for (let i = 0; i < prizes.length; i++) {
     let { tokens, total } = prizes[i];
@@ -50,6 +52,9 @@ import { getData, Result, shuffle } from "./utils";
       }
       result[winner].tokens = `${BigInt(result[winner].tokens) + tokens}`;
       result[winner].prizes[i] += 1;
+      if (individual) {
+        result[winner].prizesIndexes.push(priceIndex++);
+      }
       index++;
     }
   }

@@ -8,6 +8,7 @@ export type Result = Record<
     tickets: number;
     tokens: string;
     prizes: Record<number, number>;
+    prizesIndexes: number[];
   }
 >;
 
@@ -26,6 +27,7 @@ export const getData = async () => {
     token: string;
     decimals: number;
     seed: string;
+    individual?: boolean;
     prizes: {
       name: string;
       tokens: string;
