@@ -1,0 +1,24 @@
+{
+  "token": "AceTrader",
+  "decimals": 0,
+  "seed": "0xe793a61dcc9087860e16338122835a7f1c2c9aee47611d333b0d25178733904f",
+  "_seed": "AceTrader Subscription Contract Creation tx: https://arbiscan.io/tx/0xe793a61dcc9087860e16338122835a7f1c2c9aee47611d333b0d25178733904f",
+  "individual": true,
+  "prizes": [
+    {
+      "name": "Grand Prize",
+      "tokens": "20000",
+      "total": 1
+    },
+    {
+      "name": "Prize 2",
+      "tokens": "10000",
+      "total": 5
+    },
+    {
+      "name": "Prize 3",
+      "tokens": "1",
+      "total": 100
+    }
+  ]
+}
